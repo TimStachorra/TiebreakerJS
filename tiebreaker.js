@@ -22,7 +22,7 @@
 /*
 	TODO:
 	high
-	* drops
+	* drops (/) done since January 25th, 2019
 	* intentional draws
 	low
 	* randomize playerlist and make draft pods (requires seperate pairings)
@@ -449,7 +449,7 @@ function renderRound(round) {
                     if (entry.player2IsDropped) {
                         dropB = " | " + entry.player2 + " dropped"
                     }
-                    $("span#result_" + entry.ident).html("  -  " + entry.games_player1 + " / " + entry.games_player2 + " / " + entry.games_drawn + dropA, dropB);
+                    $("span#result_" + entry.ident).html("  -  " + entry.games_player1 + " / " + entry.games_player2 + " / " + entry.games_drawn + dropA + dropB);
                 }
             }
         });
