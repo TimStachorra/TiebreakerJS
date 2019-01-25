@@ -234,7 +234,12 @@ function getOpponentsGameWinPercentages(player) {
 
 function getNumberOfRounds() {
 
-    if (players.length <= 8)
+    /*
+    The number of rounds adjusted according to the Judge recommendation: https://blogs.magicjudges.org/rules/mtr-appendix-e/
+     */
+    if (players.length === 4)
+        return 2;
+    else if (players.length <= 8)
         return 3;
     else if (players.length <= 16)
         return 4;
@@ -242,8 +247,15 @@ function getNumberOfRounds() {
         return 5;
     else if (players.length <= 64)
         return 6;
-    else
+    else if (players.length <= 128)
         return 7;
+    else if (players.length <= 226)
+        return 6;
+    else if (players.length <= 409)
+        return 9;
+    else
+        return 10;
+
 }
 
 function getPairings() {
