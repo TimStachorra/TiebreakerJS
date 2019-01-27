@@ -1,6 +1,25 @@
-TiebreakerJS
-============
-TiebreakerJS is a webapp to manage small MTG tournaments.
+# TiebreakerJS
+
+TiebreakerJS is a webapp to manage small MTG tournaments at https://tiebreakerjs.ltos.de/.
+
+## Add players to your tournament
+
+<img src="docs/tiebreakerjs-screen-1.PNG" />
+
+## Organize the rounds
+
+<img src="docs/tiebreakerjs-screen-2.PNG" />
+
+## Keep the scores
+
+<img src="docs/tiebreakerjs-screen-3.PNG" />
+
+## See the final standings
+
+<img src="docs/tiebreakerjs-screen-4.PNG" />
+
+
+### Forked from JohannesKuehnel/TiebreakerJS
 
 Copyright (c) 2015, Johannes Kühnel - www.kraken.at
 All rights reserved.
