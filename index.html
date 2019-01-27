@@ -9,8 +9,8 @@
     <title>
         TiebreakerJS
     </title>
-    <link rel="apple-touch-icon" href="http://tiebreaker.kraken.at/apple-touch-icon-precomposed.png"/>
-    <link rel="apple-touch-icon" href="http://tiebreaker.kraken.at/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon-precomposed.png"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
     <!--<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="http://tiebreaker.kraken.at/apple-touch-icon-152x152.png" />-->
     <link rel="icon" type="image/x-icon" href="favicon.ico"/>
@@ -113,8 +113,14 @@
             <a href="#copyright" data-role="button" data-icon="info" data-rel="dialog">
                 <div>About</div>
             </a>
-            <a id='footer_copyright' target="_blank" href="http://www.kraken.at" data-role="button">
+            <!--<a id='footer_copyright' target="_blank" href="http://www.kraken.at" data-role="button">
                 <div>2015 &copy; Johannes K&uuml;hnel</div>
+            </a>-->
+            <a href="#imprint" data-role="button" data-rel="dialog">
+                <div>Imprint</div>
+            </a>
+            <a href="#privacy-police" data-role="button" data-rel="dialog">
+                <div>Privacy Policy</div>
             </a>
         </div>
     </div>
@@ -142,10 +148,10 @@
                 <h1>Setup</h1>
             </div>
             <div role="main" class="ui-content">
-                <h3 class="ui-title">Enter the # of rounds to be played:</p>
-                    <input type="number" name="rounds" id="rounds" value="" data-theme="a">
-                    <a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"
-                       onclick="if($('input#rounds').val() > 1){maxRounds = parseInt($('input#rounds').val()); createRound();}else{alert('Enter a positive number of rounds!')}">OK</a>
+                <h3 class="ui-title">Enter the # of rounds to be played:</h3>
+                <input type="number" name="rounds" id="rounds" value="" data-theme="a">
+                <a href="#" class="ui-btn ui-corner-all ui-shadow" data-rel="back"
+                   onclick="if($('input#rounds').val() > 1){maxRounds = parseInt($('input#rounds').val()); createRound();}else{alert('Enter a positive number of rounds!')}">OK</a>
             </div>
         </div>
         <div class="ui-corner-all custom-corners">
@@ -163,8 +169,14 @@
             <a href="#copyright" data-role="button" data-icon="info" data-rel="dialog">
                 <div>About</div>
             </a>
-            <a id='footer_copyright' target="_blank" href="http://www.kraken.at" data-role="button">
+            <!--<a id='footer_copyright' target="_blank" href="http://www.kraken.at" data-role="button">
                 <div>2015 &copy; Johannes K&uuml;hnel</div>
+            </a>-->
+            <a href="#imprint" data-role="button" data-rel="dialog">
+                <div>Imprint</div>
+            </a>
+            <a href="#privacy-police" data-role="button" data-rel="dialog">
+                <div>Privacy Policy</div>
             </a>
         </div>
     </div>
@@ -225,7 +237,7 @@
             <p><b>Save this as a bookmark:</b></p>
             <div>
                 <div><input type="text" name="url" id="url"/></div>
-                <script type="text/javascript">$("input#url").val("http://tiebreaker.kraken.at/?players=" + playersAsString);</script>
+                <script type="text/javascript">$("input#url").val("https://tiebreakerjs.ltos.de/?players=" + playersAsString);</script>
                 <div><a data-role="button" href="#players" data-rel="back">Back</a></div>
             </div>
         </div>
@@ -239,42 +251,189 @@
     <div data-role="content">
         <p>Manage your tournaments on the go!</p>
         <p>This site is best viewed on a mobile device like an iOS or Android powered tablet or smartphone.</p>
-        <p>Contact:</p>
+        <p>Contact:
+        <p>Tim Stachorra<br/>
+            K&ouml;nigsstuhl 24<br/>
+            49324 Melle
+        </p>
+        <p>tim.stachorra@racler.productions</p>
         <ul>
-            <li>Johannes 'JDK' K&uuml;hnel</li>
-            <li>website: <a href='http://www.kraken.at' target=_blank>www.kraken.at</a></li>
-            <li>twitter: <a href='https://twitter.com/OfficialJDK' target=_blank>@OfficialJDK</a></li>
-            <li><a href='https://github.com/JohannesKuehnel/TiebreakerJS' target=_blank>GitHub</a></li>
+            <li><a href='https://github.com/TimStachorra/TiebreakerJS' target=_blank>GitHub</a></li>
         </ul>
         <p>License:<br>
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US" target="_blank"><img
                     alt="Creative Commons License" style="border-width:0"
                     src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a><br/><span
                     xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/InteractiveResource"
-                    property="dct:title" rel="dct:type">TiebreakerJS</span> by <a
+                    property="dct:title" rel="dct:type">TiebreakerJS</span> fokred from <a
                     xmlns:cc="http://creativecommons.org/ns#" href="http://www.kraken.at" property="cc:attributionName"
-                    rel="cc:attributionURL" target="_blank">Johannes Kühnel</a> is licensed under a <a rel="license"
-                                                                                                       href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"
-                                                                                                       target="_blank">Creative
+                    rel="cc:attributionURL" target="_blank">Johannes Kühnel</a> and is licensed under a <a rel="license"
+                                                                                                           href="http://creativecommons.org/licenses/by-nc-sa/4.0/deed.en_US"
+                                                                                                           target="_blank">Creative
                 Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
         <a data-role="button" data-icon="back" data-iconpos="left" href="#players" data-rel="back">Back</a>
     </div>
 </div>
+<div data-role="page" id="imprint">
+    <div data-role="header">
+        <div><h3 class='title'>Imprint</h3></div>
+    </div>
+    <div data-role="content">
+        <h1>Legal Disclosure</h1>
+        Information in accordance with Section 5 TMG
+        <br><br/>Tim Stachorra<br>Königsstuhl 24<br>49324 Melle<br>
+        <h2>Contact Information</h2>
+        E-Mail: <a href="mailto:tim.stachorra@racler.productions">tim.stachorra@racler.productions</a><br>Internet
+        address: <a href="https://tim-stachorra.com/" target="_blank">https://tim-stachorra.com/</a><br><br>
+        <h2>Disclaimer</h2>
+        Accountability for content<br>
+        The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents'
+        accuracy, completeness or topicality. According to statutory provisions, we are furthermore responsible for
+        our own content on these web pages. In this matter, please note that we are not obliged to monitor
+        the transmitted or saved information of third parties, or investigate circumstances pointing to illegal
+        activity.
+        Our obligations to remove or block the use of information under generally applicable laws remain unaffected by
+        this as per
+        §§ 8 to 10 of the Telemedia Act (TMG).
+
+        <br><br>Accountability for links<br>
+        Responsibility for the content of
+        external links (to web pages of third parties) lies solely with the operators of the linked pages. No violations
+        were
+        evident to us at the time of linking. Should any legal infringement become known to us, we will remove the
+        respective
+        link immediately.<br><br>Copyright<br> Our web pages and their contents are subject to German copyright law.
+        Unless
+        expressly permitted by law, every form of utilizing, reproducing or processing
+        works subject to copyright protection on our web pages requires the prior consent of the respective owner of the
+        rights.
+        Individual reproductions of a work are only allowed for private use.
+        The materials from these pages are copyrighted and any unauthorized use may violate copyright laws.
+
+        <br><br>
+        <i>Source: </i><a href="http://www.translate-24h.de" target="_blank">impressum generator at translate-24h.de</a>
+        <br><br>
+
+        <a data-role="button" data-icon="back" data-iconpos="left" href="#players" data-rel="back">Back</a>
+    </div>
+</div>
+<div data-role="page" id="privacy-police">
+    <div data-role="header">
+        <div><h3 class='title'>Privacy Police</h3></div>
+    </div>
+    <div data-role="content">
+        <h1>Privacy Policy for TiebreakerJS</h1>
+
+        <p>At TiebreakerJS, accessible from https://tiebreakerjs.ltos.de/, one of our main priorities is the privacy of
+            our visitors. This Privacy Policy document contains types of information that is collected and recorded by
+            TiebreakerJS and how we use it.</p>
+
+        <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to
+            contact us through email at tim.stachorra@racler.productions</p>
+
+        <h2>General Data Protection Regulation (GDPR)</h2>
+        <p>We are a Data Controller of your information.</p>
+
+        <p>TiebreakerJS legal basis for collecting and using the personal information described in this Privacy Policy
+            depends on the Personal Information we collect and the specific context in which we collect the
+            information:</p>
+        <ul>
+            <li>TiebreakerJS needs to perform a contract with you</li>
+            <li>You have given TiebreakerJS permission to do so</li>
+            <li>Processing your personal information is in TiebreakerJS legitimate interests</li>
+            <li>TiebreakerJS needs to comply with the law</li>
+        </ul>
+
+        <p>TiebreakerJS will retain your personal information only for as long as is necessary for the purposes set out
+            in this Privacy Policy. We will retain and use your information to the extent necessary to comply with our
+            legal obligations, resolve disputes, and enforce our policies.</p>
+
+        <p>If you are a resident of the European Economic Area (EEA), you have certain data protection rights. If you
+            wish to be informed what Personal Information we hold about you and if you want it to be removed from our
+            systems, please contact us. Our Privacy Policy was generated with the help of <a
+                    href="https://gdprprivacypolicy.net.com/">GDPR Privacy Policy Generator</a> and the <a
+                    href="https://privacypolicytemplate.net/">GDPR Privacy Policy Template</a>.</p>
+
+        <p>In certain circumstances, you have the following data protection rights:</p>
+        <ul>
+            <li>The right to access, update or to delete the information we have on you.</li>
+            <li>The right of rectification.</li>
+            <li>The right to object.</li>
+            <li>The right of restriction.</li>
+            <li>The right to data portability</li>
+            <li>The right to withdraw consent</li>
+        </ul>
+
+        <h2>Log Files</h2>
+
+        <p>TiebreakerJS follows a standard procedure of using log files. These files log visitors when they visit
+            websites. All hosting companies do this and a part of hosting services' analytics. The information collected
+            by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date
+            and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any
+            information that is personally identifiable. The purpose of the information is for analyzing trends,
+            administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+
+
+        <h2>Privacy Policies</h2>
+
+        <P>You may consult this list to find the Privacy Policy for each of the advertising partners of
+            TiebreakerJS.</p>
+
+        <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are
+            used in their respective advertisements and links that appear on TiebreakerJS, which are sent directly to
+            users' browser. They automatically receive your IP address when this occurs. These technologies are used to
+            measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that
+            you see on websites that you visit.</p>
+
+        <p>Note that TiebreakerJS has no access to or control over these cookies that are used by third-party
+            advertisers.</p>
+
+        <h2>Third Pary Privacy Policies</h2>
+
+        <p>TiebreakerJS's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to
+            consult the respective Privacy Policies of these third-party ad servers for more detailed information. It
+            may include their practices and instructions about how to opt-out of certain options. You may find a
+            complete list of these Privacy Policies and their links here: Privacy Policy Links.</p>
+
+        <p>You can choose to disable cookies through your individual browser options. To know more detailed information
+            about cookie management with specific web browsers, it can be found at the browsers' respective websites.
+            What Are Cookies?</p>
+
+        <h2>Children's Information</h2>
+
+        <p>Another part of our priority is adding protection for children while using the internet. We encourage parents
+            and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+
+        <p>TiebreakerJS does not knowingly collect any Personal Identifiable Information from children under the age of
+            13. If you think that your child provided this kind of information on our website, we strongly encourage you
+            to contact us immediately and we will do our best efforts to promptly remove such information from our
+            records.</p>
+
+        <h2>Online Privacy Policy Only</h2>
+
+        <p>Our Privacy Policy created at GDPRPrivacyPolicy.net) applies only to our online activities and is valid for
+            visitors to our website with regards to the information that they shared and/or collect in TiebreakerJS.
+            This policy is not applicable to any information collected offline or via channels other than this website.
+            <a href="https://gdprprivacypolicy.net">Our GDPR Privacy Policy</a> was generated from the GDPR Privacy
+            Policy Generator.</p>
+
+        <h2>Consent</h2>
+
+        <p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+        <a data-role="button" data-icon="back" data-iconpos="left" href="#players" data-rel="back">Back</a>
+    </div>
+</div>
 <script type="text/javascript">
-    var year = date.getFullYear();
-    $('a#footer_copyright').html("<div>" + year + " &copy; Johannes K&uuml;hnel</div>");
 
     $(function () {
         $('[data-role=page]').on('pageshow', function (event, ui) {
             try {
                 if (location.hash) {
                     ga('send', 'pageview', location.hash);
-                }
-                else {
+                } else {
                     ga('send', 'pageview');
                 }
-            }
-            catch (error) {
+            } catch (error) {
             }
         });
     });
